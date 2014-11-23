@@ -29,7 +29,7 @@ class LayoutWidget(BoxLayout):
         try:
             return str(eval(n))
         except:
-            return '0'
+            return 'Error'
 
     def until_other(x):
         i = -1

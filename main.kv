@@ -90,6 +90,29 @@
                     on_release: display.text += str((1+5**.5)/2)
 
             BoxLayout:
+                size_hint_y: 1
+                Button:
+                    text: 'E'
+                    font_size: 20
+                    size_hint_y: 1
+                    on_release: display.text += '('
+                Button:
+                    text: 'sin'
+                    font_size: 20
+                    size_hint_y: 1
+                    on_release: display.text += ')'
+                Button:
+                    text: 'cos'
+                    font_size: 20
+                    size_hint_y: 1
+                    on_release: display.text += '.'
+                Button:
+                    text: 'tan'
+                    font_size: 20
+                    size_hint_y: 1
+                    on_release: display.text += str((1+5**.5)/2)
+
+            BoxLayout:
                 orientation: 'vertical'
                 BoxLayout:
                     Button:
