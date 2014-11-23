@@ -25,7 +25,7 @@ class LayoutWidget(BoxLayout):
         if '!' in n:
             factorial_string = str(re.findall(r'\((.*?)\!', str(n)))[2:-3]
             n = n.replace(factorial_string, 'factorial(' + factorial_string + ')').replace('!', '')
-            
+
         n = n.lstrip('0').replace('^', '**').replace('Φ', str((1+5**.5)/2))
         try:
             return str(eval(n))
